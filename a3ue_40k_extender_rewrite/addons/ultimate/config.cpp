@@ -22,3 +22,11 @@ class A3U
     #include "config\plane\cfgPlaneLoadouts.hpp"
     #include "config\trader\cfgTraderMods.hpp"
 };
+
+class Extended_PostInit_EventHandlers
+{
+    class Viper_40KExtender_PostInit
+    {
+        init="call compile preprocessFileLineNumbers 'x\a3ue_40k_extender_rewrite\addons\ultimate\XEH_postInit.sqf'";
+    };
+};

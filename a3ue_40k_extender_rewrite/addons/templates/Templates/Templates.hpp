@@ -31,6 +31,8 @@ class Templates
         Everything else will be inherited from the class (link above)
     */
 
+    // 
+
     class 40k_reb_Sek : Vanilla_Base
     {
         basepath = QPATHTOFOLDER(Templates\40k); //the path to the folder the template is located in, this translates to "\x\A3AE\addons\templates\Templates\Vanilla"
@@ -115,6 +117,33 @@ class Templates
         file = "40k_AI_BloodPact"; //the template file name
         maps[] = {}; //if this template should be prioritized on any maps (case sensetive to worldName)
         description = "They hide their faces in snarling iron, but the cruelty in their hearts is manifest in their brutal deeds.";
+        equipFlags[] = {};
+        climate[] = {"arid", "arctic", "temperate", "tropical"}; //climate that the template is meant for
+    };
+
+    class 40k_AI_FeudalImperial : Vanilla_Base
+    {
+        requiredAddons[] = {"DM_Kantrael", "DM_VicChanges"};
+        basepath = QPATHTOFOLDER(Templates\40k); //the path to the folder the template is located in, this translates to "\x\A3AE\addons\templates\Templates\Vanilla"
+        side = "Occ"; //the side the faction defaults to, one of the following: Inv, Occ, Reb, Riv, Civ
+        flagTexture = "a3\ui_f\data\logos\arma3_white_ca.paa"; //path to an icon to be displayed in the selector
+        name = "Feudal Imperium"; //the name shown in the selector
+        file = "40k_AI_FeudalImperial"; //the template file name
+        maps[] = {}; //if this template should be prioritized on any maps (case sensetive to worldName)
+        description = "Ours is the perfect life. All know their place.";
+        equipFlags[] = {};
+        climate[] = {"arid", "arctic", "temperate", "tropical"}; //climate that the template is meant for
+    };
+    class 40k_AI_FeudalChaos : Vanilla_Base
+    {
+        requiredAddons[] = {"DM_Kantrael", "DM_VicChanges"};
+        basepath = QPATHTOFOLDER(Templates\40k); //the path to the folder the template is located in, this translates to "\x\A3AE\addons\templates\Templates\Vanilla"
+        side = "Inv"; //the side the faction defaults to, one of the following: Inv, Occ, Reb, Riv, Civ
+        flagTexture = "a3\ui_f\data\logos\arma3_white_ca.paa"; //path to an icon to be displayed in the selector
+        name = "Feudal Chaos"; //the name shown in the selector
+        file = "40k_AI_FeudalChaos"; //the template file name
+        maps[] = {}; //if this template should be prioritized on any maps (case sensetive to worldName)
+        description = "Open your heart to hatred. Open your mind to fury.";
         equipFlags[] = {};
         climate[] = {"arid", "arctic", "temperate", "tropical"}; //climate that the template is meant for
     };
